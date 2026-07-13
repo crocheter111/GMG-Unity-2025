@@ -6059,6 +6059,7 @@ GameObject:
   - component: {fileID: 2126731414}
   - component: {fileID: 2126731413}
   - component: {fileID: 2126731418}
+  - component: {fileID: 2126731419}
   m_Layer: 0
   m_Name: spikeBall
   m_TagString: Untagged
@@ -6085,7 +6086,7 @@ MonoBehaviour:
   disappearMode: 1
   timeToDisappear: 2
   keyToPress: 13
-  followingText: {fileID: 0}
+  followingText: {fileID: 2126731419}
 --- !u!60 &2126731414
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6180,6 +6181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ConditionArea
   actions:
   - {fileID: 2126731413}
+  - {fileID: 2126731419}
   useCustomActions: 0
   customActions:
     m_PersistentCalls:
@@ -6310,6 +6312,26 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.42, y: 1.48}
   m_EdgeRadius: 0
+--- !u!114 &2126731419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126731412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9117653835b354259a0c03ce702840f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueBalloonAction
+  textToDisplay: Ready to dieeeeeee
+  backgroundColor: {r: 0.44313726, g: 0.5176471, b: 0.57254905, a: 1}
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  targetObject: {fileID: 0}
+  disappearMode: 1
+  timeToDisappear: 2
+  keyToPress: 13
+  followingText: {fileID: 0}
 --- !u!4 &1024867011407733723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1824755943559646891, guid: b36c66b9a4ef135428cf8ec0d4b141f5, type: 3}
